@@ -1,9 +1,8 @@
-import Navbar from "./Navbar";
-import MainPart from "./MainPart";
-import SearchFeed from "./SearchFeed";
-import SearchBar from "./SearchBar";
-import Sidebar from "./Sidebar";
-import YtChannelDetail from "./YtChannelDetail";
-import YtVideoDetail from "./YtVideoDetail";
-
-export { Navbar, MainPart, SearchFeed, SearchBar, Sidebar, YtChannelDetail, YtVideoDetail }
+export { default as Navbar } from "./Navbar";
+export { default as MainPart } from "./MainPart";
+export { default as SearchFeed } from "./SearchFeed";
+export { default as SearchBar } from  "./SearchBar";
+export { default as Sidebar } from "./Sidebar";
+export { default as Videos } from "./Videos";
+export { default as YtChannelDetail } from "./YtChannelDetail";
+export { default as YtVideoDetail } from "./YtVideoDetail";
