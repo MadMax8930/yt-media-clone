@@ -40,7 +40,7 @@ export const categories = [
   
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
+export const demoThumbnailUrl = 'https://i.ytimg.com/vi/00vx_W1vnnw/maxresdefault.jpg';
 export const demoChannelUrl = '/channel/UC6vMkHAULkiJrK_GT2S_Y1Q';
 export const demoVideoUrl = '/video/00vx_W1vnnw';
 export const demoChannelTitle = 'Russkhof Entertainment';
