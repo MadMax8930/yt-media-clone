@@ -3,6 +3,6 @@ import Feed from "./Feed";
 import ChannelDetail from "./ChannelDetail";
 import VideoDetail from "./VideoDetail";
 import SearchFeed from "./SearchFeed";
+import SearchBar from "./SearchBar";
 
-
-export { Navbar, Feed, SearchFeed, ChannelDetail, VideoDetail }
+export { Navbar, Feed, SearchFeed, SearchBar, ChannelDetail, VideoDetail }
