@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import { Sidebar, Videos } from '../components';
 import { fetchFromAPI } from '../utils/fetchAPI';
 
-const MainPart = () => {
+const MainSection = () => {
    const [selectedCategory, setSelectedCategory] = useState('New');
    const [videos, setVideos] = useState([])
    useEffect(() => {
@@ -32,4 +32,4 @@ const MainPart = () => {
    )
 }
 
-export default MainPart;
+export default MainSection;
