@@ -20,7 +20,7 @@ const YtVideoCard = ({ videoItem: { id: { videoId } }, videoItem: { snippet } })
          </Link>
       {/* Video Description */}
          <Link to={snippet?.channelId ? yt+`/channel/${snippet?.channelId}` : yt+`${demoChannelUrl}`}>
-            <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
+            <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px', width: { xs: '230px', sm: '358px', md: '290px' } }}>
                <Typography variant="subtitle1" fontWeight="bold" color="#fff" marginRight={2}>
                   {decodeTitle(snippet?.title.slice(0, 60)) || decodeTitle(demoVideoTitle.slice(0, 60))}
                </Typography>

@@ -3,14 +3,14 @@ import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import { demoProfilePicture, yt } from '../utils/constants';
 
-const YtChannelCard = ({ channelItem }) => {
+const YtChannelCard = ({ channelItem, marginTop }) => {
    // console.log(channelItem)
 
   return (
     <Box sx={{ borderRadius: '20px', width: { xs: '358px', md: '290px' }, height: '326px', 
-               display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'auto' }}>
+               display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'auto', marginTop }}>
       {/* Channel Logo */}
-         <Link to={yt+`/channel/${channelItem?.id?.channelId}`}>
+         <Link to={`/channel/${channelItem?.id?.channelId}`}>
             <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', color: '#fff' }}>
                <CardMedia 
                   image={channelItem?.snippet?.thumbnails?.high?.url || demoProfilePicture} alt={channelItem?.snippet?.title}
