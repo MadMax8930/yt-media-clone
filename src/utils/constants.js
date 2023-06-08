@@ -14,25 +14,23 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 import PublicIcon from '@mui/icons-material/Public';
-import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
   { name: 'Russkhof', icon: <GradeIcon />, },
   { name: 'Coding', icon: <CodeIcon />, },
   { name: 'Music', icon: <MusicNoteIcon /> },
-  { name: 'Comedy', icon: <TheaterComedyIcon />, },
+  { name: 'Pranks', icon: <TheaterComedyIcon />, },
   { name: 'Politics', icon: <PublicIcon /> },
   { name: 'Gaming', icon: <SportsEsportsIcon />, },
   { name: 'Live', icon: <LiveTvIcon />, },
   { name: 'Spanish', icon: <GTranslateIcon/>, },
-  { name: 'Crypto', icon: <DeveloperModeIcon />, },
   { name: 'Sport', icon: <FitnessCenterIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
   { name: 'Movie', icon: <OndemandVideoIcon />, },
-  { name: 'Pranks', icon: <EmojiEmotionsIcon />, },
-  { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Gym', icon: <FitnessCenterIcon />, },
+  { name: 'Education', icon: <SchoolIcon />, },
+  { name: 'Crypto', icon: <DeveloperModeIcon />, },
   { name: 'Fashion', icon: <CheckroomIcon />, },
   { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
 ];
