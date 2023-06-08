@@ -16,8 +16,6 @@ import GTranslateIcon from '@mui/icons-material/GTranslate';
 import PublicIcon from '@mui/icons-material/Public';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
-
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
   { name: 'Russkhof', icon: <GradeIcon />, },
@@ -37,8 +35,11 @@ export const categories = [
   { name: 'Gym', icon: <FitnessCenterIcon />, },
   { name: 'Fashion', icon: <CheckroomIcon />, },
   { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
-  
 ];
+
+export const yt = 'https://youtube.com'
+export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export { default as SearchIcon } from '@mui/icons-material/Search';
 
 export const demoThumbnailUrl = 'https://i.ytimg.com/vi/00vx_W1vnnw/maxresdefault.jpg';
 export const demoChannelUrl = '/channel/UC6vMkHAULkiJrK_GT2S_Y1Q';
