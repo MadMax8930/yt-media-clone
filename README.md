@@ -1,33 +1,23 @@
-## Youtube Clone
-****************
-### React
-- Folder & File structure
-- Hooks & Refs
-### React Context API
-- Advanced State Management
-### Next.js best practices
-- Static Generation
-- Server-side rendering
-### Tailwind
-- Modern UI
-### Rapid API (Youtube v3)
-- Fetch data from unlimited sources
-- Endpoints
-    - Suggested Videos
-    - Search
-    - Video details
-    - Channel details
-    - Channel Videos
+## Youtube Media Clone
+made with React under node v16.13.2
 
+### Rapid API:
+[Youtube v3](https://rapidapi.com/ytdlfree/api/youtube-v31/) api endpoints
 
-### Dependencies:  (npm install --legacy-peer-deps)
+### Helper library:
+[MUI React Kit](https://mui.com/) documentation
+
+### Dependencies:
 - Material UI
     - @emotion/react
     - @emotion/styles
-- MUI Kit for react (https://mui.com/) (latest v5)
+- MUI Kit (latest v5)
     - @mui/icons-material
     - @mui/material
 - API calls
     - axios
 - Routing (latest v6)
-    react-router-dom
+    - react-router-dom
+
+### Deployment:
+[Netlify](https://my-ytmedia.netlify.app/) project
