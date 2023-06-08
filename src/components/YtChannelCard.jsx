@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
-import { demoProfilePicture, yt } from '../utils/constants';
+import { demoProfilePicture } from '../utils/constants';
 
 const YtChannelCard = ({ channelItem, marginTop }) => {
    // console.log(channelItem)

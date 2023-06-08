@@ -8,7 +8,7 @@ const YtChannelDetail = () => {
    const { id } = useParams();
    const [channelStats, setChannelStats] = useState(null);
    const [channelVids, setChannelVids] = useState([]);
-   console.log(channelStats, channelVids)
+   // console.log(channelStats, channelVids)
 
    useEffect(() => {
       fetchFromAPI(`channels?part=snippet&id=${id}`)

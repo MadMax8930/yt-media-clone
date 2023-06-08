@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
-import { demoThumbnailUrl, demoChannelTitle, demoChannelUrl, demoVideoTitle, demoVideoUrl, yt } from '../utils/constants';
+import { demoThumbnailUrl, demoChannelTitle, demoChannelUrl, demoVideoTitle, demoVideoUrl } from '../utils/constants';
 import he from 'he';
 
 const YtVideoCard = ({ videoItem: { id: { videoId } }, videoItem: { snippet } }) => {
@@ -13,13 +13,13 @@ const YtVideoCard = ({ videoItem: { id: { videoId } }, videoItem: { snippet } })
   return (
     <Card sx={{ width: { xs: '100%', sm: '358px', md: '290px' }, borderRadius: 0 }}>
       {/* Video Thumbnail */}
-         <Link to={videoId ? yt+`/video/${videoId}` : yt+`${demoVideoUrl}`}>
+         <Link to={videoId ? `/video/${videoId}` : `${demoVideoUrl}`}>
             <CardMedia 
                image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} alt={snippet?.title} 
                sx={{ width: { xs: '100%', sm: '358px', md: '290px' }, height: 162, "&:hover": { border: "3px solid #FC1503"}, boxSizing: 'border-box' }} />
          </Link>
       {/* Video Description */}
-         <Link to={snippet?.channelId ? yt+`/channel/${snippet?.channelId}` : yt+`${demoChannelUrl}`}>
+         <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : `${demoChannelUrl}`}>
             <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px', width: { xs: '230px', sm: '358px', md: '290px' } }}>
                <Typography variant="subtitle1" fontWeight="bold" color="#fff" marginRight={2}>
                   {decodeTitle(snippet?.title.slice(0, 60)) || decodeTitle(demoVideoTitle.slice(0, 60))}
