@@ -7,19 +7,11 @@ const Videos = ({ vids }) => {
    const searchedVideos = vids.filter(item => item.id.videoId && !item.id.channelId);
 
    return (
-      <Stack direction='row' flexWrap='wrap' justifyContent='start' gap={2}> 
+      <Stack direction='row' flexWrap='wrap' justifyContent='start' alignItems='start' gap={2}> 
          {verifiedChannel && 
             <Box color='red'>
                <YtChannelCard channelItem={verifiedChannel} />
             </Box>}
-         {/* {vids.map((item, index) => (
-            <Box key={index} color='white'>
-               {item.id.videoId 
-                  && <YtVideoCard videoItem={item} />}
-               {item.id.channelId
-                  && <YtChannelCard channelItem={item} />}
-            </Box>
-         ))} */}
          {searchedVideos.map((item, index) => (
             <Box key={index} color='white'>
                <YtVideoCard videoItem={item} />
