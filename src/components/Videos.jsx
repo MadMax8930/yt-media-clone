@@ -8,10 +8,10 @@ const Videos = ({ vids }) => {
 
    return (
       <Stack direction='row' flexWrap='wrap' justifyContent='start' gap={2}> 
-         {/* {verifiedChannel && 
+         {verifiedChannel && 
             <Box color='red'>
                <YtChannelCard channelItem={verifiedChannel} />
-            </Box>} */}
+            </Box>}
          {/* {vids.map((item, index) => (
             <Box key={index} color='white'>
                {item.id.videoId 
